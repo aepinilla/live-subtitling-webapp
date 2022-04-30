@@ -1,0 +1,35 @@
+{
+  "name": "live-subtitling-webapp",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "parcel build translator/static/index.js -d translator/static/dist",
+    "watch": "parcel watch translator/static/index.js -d translator/static/dist",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.6.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.6.0",
+    "enzyme-to-json": "^3.3.0",
+    "jest": "^23.6.0",
+    "parcel-bundler": "^1.0.1",
+    "react-test-renderer": "^16.5.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "json5": "^2.2.1",
+    "prop-types": "^15.6.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "jest": {
+    "setupTestFrameworkScriptFile": "<rootDir>setupTests.js",
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  }
+}
